@@ -1,0 +1,14 @@
+body {
+    background-color: #34a2ebce;
+    text-align: center;
+    /*width: 800px; margin: 0 auto; */
+}
+
+
+.ON {
+    color: #01b301; /* Green color with hex code #008000 */
+}
+
+.OFF {
+    color: #ff0202; /* Re color with hex code #a80101d7 */
+}

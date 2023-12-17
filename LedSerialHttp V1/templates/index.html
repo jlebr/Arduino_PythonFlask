@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Botón de encendido / apagado</title>
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+
+</head>
+<body>
+	<h1>Botón de encendido / apagado</h1>
+	<p>Presione el botón para encender o apagar:</p>
+	<form action="http://127.0.0.1:5000/request" method="POST">
+		<input type="submit" name="data" value="encender">
+		<input type="submit" name="data" value="apagar">
+		<input type="submit" name="data" value="estado">
+	</form>
+	<p>El último valor registrado es: <span class="{{last_value}}">{{last_value}}</span></p>
+</body>
+</html>
+
+<!--
+	Realizado por Jorge Barboza
+-->
