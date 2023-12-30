@@ -11,7 +11,7 @@ a su vez usa el codigo LedSerial.py para hacer la comunicación con el arduino.
 from flask import Flask, render_template
 from flask import Flask, request
 from flask_cors import CORS
-from LedSerial import encender,apagar
+from _old.LedSerial import encender,apagar
 
 #===================================================================
 #Codigo que ejecuta la aplicación Flask
