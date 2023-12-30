@@ -17,7 +17,8 @@ from LedSerial import encender,apagar
 #Codigo que ejecuta la aplicación Flask
 app = Flask(__name__)
 # Ruta en la cual se puede guardar la data del arduino en un archivo last_value.txt
-ruta = "C:/Users/jlebr/Documents/Jorge Python Telegram/Codigo de prueba/ArduinoPython/LedSerialHttp V1/last_value.txt"
+# ruta = "C:/Users/jlebr/Documents/Jorge Python Telegram/Codigo de prueba/ArduinoPython/LedSerialHttp V1/last_value.txt"
+ruta = "last_value.txt"
 
 #Route que recibe peticiones POST y la procesa para enviar lo que se quiere que el arduino haga.
 @app.route('/request', methods=['POST'])
