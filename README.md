@@ -4,6 +4,7 @@ Este proyecto fue Realizaodo con Flask, y BluePrint para las rutas, ademas esta 
 
 # Instrucciones de Uso
 ```bash
+#Importante recordar estar en la ruta donde esta el archivo "requirements.txt"
 pip install -r requirements.txt
 
 python manage.py
