@@ -3,13 +3,10 @@
 
 // Utilizo el led que viene de fabrica porque no tengo leds
 int ledPin = LED_BUILTIN;
-int ledpin2 = 13;
 int estadoLed = 0;
 
 void setup() {
   pinMode(ledPin, OUTPUT);
-  pinMode(ledpin2, OUTPUT);
-  digitalWrite(ledpin2, HIGH);
   Serial.begin(9600);
   
   // Leer el último estado guardado en la memoria EEPROM

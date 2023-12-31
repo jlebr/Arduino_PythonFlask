@@ -14,7 +14,7 @@ def comunicate(value:int) -> bool:
         value = str(value)
         conexion.write(value.encode())
         print(f'Valor: {value}')
-        time.sleep(1)
+        conexion.close()
         return True
 
     except Exception as e:
