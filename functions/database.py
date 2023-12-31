@@ -35,11 +35,10 @@ def update_status(status:bool) -> bool:
         conexion.close()
 
         print(f"Valor Actualizado {status}")
-        return True
+        return status
 
     except Exception as e:
-        print(f"Error: {e}")
-        return False
+        return f"Error: {e}"
 
 if __name__ == '__main__':
     # Llamar a la función para inicializar la base de datos
