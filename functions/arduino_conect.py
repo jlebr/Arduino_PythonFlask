@@ -13,6 +13,8 @@ def comunicate(value:int) -> bool:
 
         value = str(value)
         conexion.write(value.encode())
+        print(f'Valor: {value}')
+        time.sleep(1)
         return True
 
     except Exception as e:
@@ -20,4 +22,4 @@ def comunicate(value:int) -> bool:
         return False
 
 if __name__ == '__main__':
-    comunicate(1)
+    print(comunicate(1))
