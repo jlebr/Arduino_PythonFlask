@@ -18,6 +18,7 @@ def switch(value:str) -> bool:
         return database.update_status(False)
 
     else:
+        arduino.comunicate(2)
         return database.get_status()
 
 if __name__ == '__main__':
