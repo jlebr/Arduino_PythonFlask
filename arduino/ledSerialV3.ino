@@ -1,7 +1,8 @@
 // Ultima version del codigo que guarda el valor del LED en la memoria interna de arduino para luego leerla o escribirla segun sea el caso
 #include <EEPROM.h>
 
-int ledPin = 12;
+// Utilizo el led que viene de fabrica porque no tengo leds
+int ledPin = LED_BUILTIN;
 int ledpin2 = 13;
 int estadoLed = 0;
 
