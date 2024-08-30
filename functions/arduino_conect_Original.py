@@ -1,29 +1,11 @@
 import serial
 import time
 
-puerto_serial = 'COM3'
-conexion = serial.Serial(puerto_serial, 9600, timeout=1)    
-
-def comunicate(value:int) -> bool:
-    try:
-        print("Conexión establecida correctamente")
-        value = str(value)
-        conexion.write(value.encode())
-        print(f'Valor: {value}')
-        datos = conexion.readline().decode().strip()  # Lee una línea de datos
-        print(f'Respuesta Arduino: {datos}')
-        #conexion.close()
-        return datos
-
-    except Exception as e:
-        print("Error al establecer la conexión:", e)
-        return False
-
-"""
 #puerto_serial = 'COM4'
-def comunicate(value:int) -> bool: 
-    #value: 0 -> apagado 1 -> Encendido
-
+def comunicate(value:int) -> bool:
+    """
+    value: 0 -> apagado 1 -> Encendido
+    """
     #puerto_serial = '/dev/ttyUSB0'  # Cambia esto por tu puerto serial específico
     puerto_serial = 'COM4'
 
@@ -61,4 +43,7 @@ def leer_serial():
 
 if __name__ == '__main__':
     print(comunicate(1))
+
+"""
+NOTA: POR ALGUN MOTIVO ESTE ARCHIVO EN WINDOWS NO ME FUNCIONA Y NO DEJA QUE ME TRABAJE BIEN EL ARDUINO.
 """

@@ -1,12 +1,23 @@
+/* Estilos para centrar y ajustar el ancho de los inputs en dispositivos móviles */
+@media (max-width: 600px) {
+    input[type="submit"] {
+      display: block;
+      width: 80%;
+      margin: 0 auto 10px; /* Centrar y agregar margen inferior */
+      font-size: 18px;
+    }
+  }
+  
+
 body {
-    background-color: #34a2ebce;
+    background-color: #5dbadfdc; /*Primer color que probe "#34a2ebce"*/
     text-align: center;
     /*width: 800px; margin: 0 auto; */
 }
 
 
 .ON {
-    color: #01b301; /* Green color with hex code #008000 */
+    color: #028d02c9; /* Green color with hex code #008000 */
 }
 
 .OFF {

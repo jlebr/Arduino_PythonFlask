@@ -1,0 +1,3 @@
+python -m site # Comando que me da la ubicación donde estan instaladas las librerias
+pip freeze # Comando en Windows que verifica las librerias instaladas
+# Para ver SQLITE ibterfas grafica: (DB Browser) https://sqlitebrowser.org/dl/

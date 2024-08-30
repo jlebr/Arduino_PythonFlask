@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Botón de encendido / apagado</title>
+	<title>Botón ON/OFF</title>
 	<link rel="stylesheet" href="{{ url_for('main.static', filename='css/styles.css') }}">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 
 </head>
 <body>
@@ -15,6 +16,20 @@
 		<input type="submit" name="data" value="estado">
 	</form>
 	<p>El último valor registrado es: <span class="{{last_value}}">{{last_value}}</span></p>
+	<p>El Led se encuentra: <span class="{{Led}}">{{Led}}</span></p>
+	<p>===========================================================================</p>
+	<p>Presione el botón Ventilador:</p>
+	<form method="POST">
+		<input type="submit" name="data" value="Apagar">
+		<input type="submit" name="data" value="Vel 1">
+		<input type="submit" name="data" value="Vel 2">
+		<input type="submit" name="data" value="Vel 3">
+	</form>
+	<p>El estado del Ventilador es: <span class="{{fan}}">{{fan}}</span></p>
+	
+	<!--
+	-->
+
 </body>
 </html>
 
